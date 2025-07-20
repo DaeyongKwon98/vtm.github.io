@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  margin: 40px;
+}
+h1 {
+  color: #444;
+  margin-bottom: 20px;
+}
+.video-section {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.audio-list {
+  margin-top: 12px;
+}
+audio {
+  display: block;
+  margin-bottom: 8px;
+}

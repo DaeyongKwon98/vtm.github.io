@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Recommendation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Video별 Music Recommendation Demo</h1>
+
+  <div class="video-section">
+    <h2>Video 1</h2>
+    <video width="320" height="240" controls>
+      <source src="videos/video1.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+    <div class="audio-list">
+      <p>추천 음악 1</p>
+      <audio controls>
+        <source src="audios/video1_music1.mp3" type="audio/mp3">
+      </audio>
+      <p>추천 음악 2</p>
+      <audio controls>
+        <source src="audios/video1_music2.mp3" type="audio/mp3">
+      </audio>
+      <p>추천 음악 3</p>
+      <audio controls>
+        <source src="audios/video1_music3.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </div>
+
+  <!-- 필요한 만큼 같은 구조로 Video 2, 3, ... 추가 -->
+</body>
+</html>
