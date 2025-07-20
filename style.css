@@ -1,8 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 상단에서 시작, 세로 중앙이면 center */
   font-family: 'Pretendard','Noto Sans KR', Arial, sans-serif;
   background: #f4f8fb;
-  margin: 0;
-  padding: 30px;
+  padding: 0; /* body padding 제거 */
+}
+
+.main-container {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px 20px 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +26,7 @@ body {
 
 h1 {
   color: #333;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   font-size: 2em;
   letter-spacing: -1px;
   text-align: center;
@@ -19,7 +35,7 @@ h1 {
 .description {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 38px;
   color: #666;
   font-size: 1em;
 }
@@ -28,8 +44,9 @@ h1 {
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  margin: 32px auto 0 auto;
+  margin: 22px 0 0 0;
   max-width: 420px;
+  width: 100%;
   padding: 32px 24px 22px 24px;
   display: flex;
   flex-direction: column;
@@ -72,9 +89,13 @@ audio {
 }
 
 @media (max-width: 620px) {
+  .main-container {
+    padding: 18px 4px 18px 4px;
+    max-width: 100vw;
+  }
   .video-section {
+    padding: 13px 3px 8px 3px;
     max-width: 100%;
-    padding: 17px 6px 15px 6px;
   }
   video {
     max-width: 98vw;
