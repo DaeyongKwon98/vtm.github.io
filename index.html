@@ -11,95 +11,101 @@
 
     <p class="description">
       This demo showcases the results of video-to-music recommendation using the
-      <strong>qwen3-embedding-0.6B</strong> model.
-      Each video is shown with its top 3 recommended music mixes.
+      <strong>qwen3-embedding-0.6B</strong> model.  
+      Each original video is shown followed by its top 3 recommended music mixes.
     </p>
 
-    <!-- Video ID: 0 -->
+    <!-- VIDEO ID: 0 -->
     <div class="video-section">
       <h2>Original Video</h2>
-      <video class="original-video" controls>
-        <source src="videos/0.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div class="video-wrapper">
+        <video class="original-video" controls>
+          <source src="videos/0.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-      <h2 style="margin-top: 30px;">Mixed Versions</h2>
+      <h2 class="subheading">Mixed Versions</h2>
       <div class="video-list">
         <div class="video-item">
           <p>1st</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/0/mixed_1.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>2nd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/0/mixed_2.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>3rd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/0/mixed_3.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
     </div>
 
-    <!-- Video ID: 1 -->
+    <!-- VIDEO ID: 1 -->
     <div class="video-section">
       <h2>Original Video</h2>
-      <video class="original-video" controls>
-        <source src="videos/1.mp4" type="video/mp4" />
-      </video>
+      <div class="video-wrapper">
+        <video class="original-video" controls>
+          <source src="videos/1.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      <h2 style="margin-top: 30px;">Mixed Versions</h2>
+      <h2 class="subheading">Mixed Versions</h2>
       <div class="video-list">
         <div class="video-item">
           <p>1st</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/1/mixed_1.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>2nd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/1/mixed_2.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>3rd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/1/mixed_3.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
     </div>
 
-    <!-- Video ID: 2 -->
+    <!-- VIDEO ID: 2 -->
     <div class="video-section">
       <h2>Original Video</h2>
-      <video class="original-video" controls>
-        <source src="videos/2.mp4" type="video/mp4" />
-      </video>
+      <div class="video-wrapper">
+        <video class="original-video" controls>
+          <source src="videos/2.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      <h2 style="margin-top: 30px;">Mixed Versions</h2>
+      <h2 class="subheading">Mixed Versions</h2>
       <div class="video-list">
         <div class="video-item">
           <p>1st</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/2/mixed_1.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>2nd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/2/mixed_2.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="video-item">
           <p>3rd</p>
-          <video controls>
+          <video class="mixed-video" controls>
             <source src="mixed/2/mixed_3.mp4" type="video/mp4" />
           </video>
         </div>
