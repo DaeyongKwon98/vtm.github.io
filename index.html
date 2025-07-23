@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Music Recommendation Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="main-container">
     <h1>Video to Music Recommendation Demo</h1>
 
     <p class="description">
-      This demo showcases the results of video-to-music recommendation using the <strong>qwen3-embedding-0.6B</strong> model.
-      For each video, the top 3 recommended audio clips are presented below in order of relevance, from 1st to 3rd.
+      This demo showcases the results of video-to-music recommendation using the
+      <strong>qwen3-embedding-0.6B</strong> model.
+      Each video is shown with its top 3 recommended music mixes.
     </p>
 
+    <!-- Video ID: 0 -->
     <div class="video-section">
       <h2>Video</h2>
-      <video width="320" height="240" controls>
-        <source src="videos/0.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="audio-list">
-        <p>1st</p>
-        <audio controls>
-          <source src="audios/0/GO_0_1.wav" type="audio/wav">
-        </audio>
-        <p>2nd</p>
-        <audio controls>
-          <source src="audios/0/KR_0_2.wav" type="audio/wav">
-        </audio>
-        <p>3rd</p>
-        <audio controls>
-          <source src="audios/0/HD_0_3.wav" type="audio/wav">
-        </audio>
+      <div class="video-list">
+        <div class="video-item">
+          <p>1st</p>
+          <video controls>
+            <source src="mixed/0/mixed_1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-item">
+          <p>2nd</p>
+          <video controls>
+            <source src="mixed/0/mixed_2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-item">
+          <p>3rd</p>
+          <video controls>
+            <source src="mixed/0/mixed_3.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
 
+    <!-- Video ID: 1 -->
     <div class="video-section">
       <h2>Video</h2>
-      <video width="320" height="240" controls>
-        <source src="videos/1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="audio-list">
-        <p>1st</p>
-        <audio controls>
-          <source src="audios/1/492_7_1.wav" type="audio/wav">
-        </audio>
-        <p>2nd</p>
-        <audio controls>
-          <source src="audios/1/1006_0_2.wav" type="audio/wav">
-        </audio>
-        <p>3rd</p>
-        <audio controls>
-          <source src="audios/1/309_4_3.wav" type="audio/wav">
-        </audio>
+      <div class="video-list">
+        <div class="video-item">
+          <p>1st</p>
+          <video controls>
+            <source src="mixed/1/mixed_1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-item">
+          <p>2nd</p>
+          <video controls>
+            <source src="mixed/1/mixed_2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-item">
+          <p>3rd</p>
+          <video controls>
+            <source src="mixed/1/mixed_3.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
 
+    <!-- Video ID: 2 -->
     <div class="video-section">
       <h2>Video</h2>
-      <video width="320" height="240" controls>
-        <source src="videos/2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="audio-list">
-        <p>1st</p>
-        <audio controls>
-          <source src="audios/2/LI_0_1.wav" type="audio/wav">
-        </audio>
-        <p>2nd</p>
-        <audio controls>
-          <source src="audios/2/HR_1_2.wav" type="audio/wav">
-        </audio>
-        <p>3rd</p>
-        <audio controls>
-          <source src="audios/2/KS_0_3.wav" type="audio/wav">
-        </audio>
+      <div class="video-list">
+        <div class="video-item">
+          <p>1st</p>
+          <video controls>
+            <source src="mixed/2/mixed_1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-item">
+          <p>2nd</p>
+          <video controls>
+            <source src="mixed/2/mixed_2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-item">
+          <p>3rd</p>
+          <video controls>
+            <source src="mixed/2/mixed_3.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   </div>
