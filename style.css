@@ -119,4 +119,23 @@ video {
   .video-item video {
     max-width: 96vw;
   }
+
+  .original-video {
+    max-width: 98vw;
+  }
+  
+  .video-item video {
+    max-width: 96vw;
+  }
+}
+
+/* 📌 원본 영상 전용 스타일 */
+.original-video {
+  width: 100%;
+  max-width: 400px; /* recommendation보다 더 크게 */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(30, 50, 100, 0.12);
+  background: #000;
+  outline: none;
+  margin-bottom: 24px;
 }
